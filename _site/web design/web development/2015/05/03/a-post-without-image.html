@@ -317,22 +317,13 @@
 </div>
 <div class='links'>
   <h3>Recent Posts</h3>
+   <?php
+$dir = "/portfolio-items/";
+// Sort in ascending order - this is default
+$portItems = scandir($dir);
+?> 
+  
   <ul>
-    
-      
-      <li><a href="/design/2015/05/06/tom-is-designing-the-new-site.html">Tom is designing the new site</a></li>
-    
-      
-      <li><a href="/logo%20design/tricks%20and%20tips/2015/05/04/make-some-sketches.html">Make some sketches</a></li>
-    
-      
-      <li><a href="/illustrations/photography/2015/05/03/look-what-we-have-done.html">Look what we have done</a></li>
-    
-      
-      <li><a href="/web%20design/web%20development/2015/05/03/a-post-without-image.html">A post without image</a></li>
-    
-      
-      <li><a href="/jekyll/update/2015/05/02/welcome-to-jekyll.html">Welcome to jekyll!</a></li>
     
   </ul>
 </div>
@@ -378,7 +369,7 @@
     <div class='large-3 medium-3 columns'>
       <div class='spacing'></div>
       <div class='links'>
-        <h4>Some pages</h4>
+        <h4>Where to?</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -389,7 +380,7 @@
       </div>
       <div class='spacing'></div>
     </div>
-    <div class='large-3 medium-3 columns'>
+    <!-- <div class='large-3 medium-3 columns'>
       <div class='spacing'></div>
       <div class='links'>
         <h4>Recent additions</h4>
@@ -398,10 +389,10 @@
         </ul>
       </div>
       <div class='spacing'></div>
-    </div>
+    </div> -->
     <div class='large-3 medium-3 columns'>
       <div class='spacing'></div>
-      <h4>Contact us</h4>
+      <h4>Get in touch</h4>
       <ul>
  <!--        <li>Phone: +86 (03) 9810 4612</li> -->
         <li>Email: silentlines.co.uk (a) gmail.com</li>
@@ -409,17 +400,17 @@
       </ul>
       <div class='spacing'></div>
       <ul class='socials'>
-        <li>
+        <!-- <li>
           <a href='http://facebook.com'>
             <i class='fa fa-facebook'></i>
           </a>
-        </li>
+        </li> -->
         <li>
-          <a href='http://twitter.com'>
+          <a href='http://twitter.com/thomp_c'>
             <i class='fa fa-twitter'></i>
           </a>
         </li>
-        <li>
+        <!-- <li>
           <a href='http://dribbble.com'>
             <i class='fa fa-dribbble'></i>
           </a>
@@ -428,7 +419,7 @@
           <a href='http://tumblr.com'>
             <i class='fa fa-tumblr'></i>
           </a>
-        </li>
+        </li> -->
       </ul>
       <div class='spacing'></div>
     </div>

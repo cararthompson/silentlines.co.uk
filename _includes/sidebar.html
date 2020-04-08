@@ -45,8 +45,14 @@
 </div>
 <div class='links'>
   <h3>Recent Posts</h3>
+   <?php
+$dir = "/portfolio-items/";
+// Sort in ascending order - this is default
+$portItems = scandir($dir);
+?> 
+  
   <ul>
-    {% for post in site.posts %}
+    {% for post in portItems %}
       {% if forloop.index > 6 %}
         {% break %}
       {% endif %}
