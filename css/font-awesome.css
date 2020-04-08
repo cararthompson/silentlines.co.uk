@@ -587,6 +587,9 @@
 .fa-trophy:before {
   content: "\f091";
 }
+.fa-chart-bar:before {
+  content: "\f080";
+}
 .fa-github-square:before {
   content: "\f092";
 }
