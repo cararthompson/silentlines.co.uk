@@ -2,8 +2,8 @@
 title: SilentLines
 email: silentlines.co.uk@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hosting music, poetry and other creative endeavours by Cara Thompson and friends. 
-baseurl: "" # the subpath of your site, e.g. /blog/
+  Music, poetry and other creative endeavours by Cara Thompson and friends. 
+baseurl: "/portfolio/" # the subpath of your site, e.g. /blog/
 # url: "http://silentlines.co.uk" # the base hostname & protocol for your site
 twitter_username: crthompson
 github_username:  crthompson
