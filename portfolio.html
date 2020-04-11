@@ -6,8 +6,77 @@ works:
     title: Your Kingdom Can't Be Shaken
     link_to: portfolio-items/your-kingdom-cant-be-shaken.html
     class: congregational
-    desc: Cara Thompson
+    desc: On the book of Judges
+  - image: images/portfolio-images/the-road.jpg
+    title: The Road, by N.C. Sherwood
+    link_to: portfolio-items/the-road.html
+    class: books poetry
+    desc: Collection of liturgical services written in by my great-grandmother
+  - image: images/portfolio-images/a-promise-eternal.png
+    title: A Promise Eternal
+    link_to: portfolio-items/the-road.html
+    class: congregational
+    desc: On the book of Titus
+  - image: images/portfolio-images/he-is-risen.png
+    title: He is Risen! / Because he lives
+    link_to: portfolio-items/he-is-risen.html
+    class: arrangement instrumental
+    desc: Easter virtual choir and orchestra project
+  - image: images/portfolio-images/dad-magician.png
+    title: Dad's going to be a magician
+    link_to: portfolio-items/dad-magician.html
+    class: poetry
+    desc: Celebration of 25 years of Powerline
+  - image: images/portfolio-images/come-and-adore.jpg
+    title: Come and Adore
+    link_to: portfolio-items/come-and-adore.html
+    class: congregational instrumental
+    desc: Christmas song with full orchestra score
+  - image: images/portfolio-images/good-news.jpg
+    title: Good News of Great Joy
+    link_to: portfolio-items/good-news.html
+    class: instrumental
+    desc: Christmas medley for small band
+  - image: images/portfolio-images/wilderness.jpg
+    title: As I Walk This Arid Land (The Wilderness Song)
+    link_to: portfolio-items/good-news.html
+    class: congregational
+    desc: On the Exodus wilderness
+  - image: images/portfolio-images/be-still.png
+    title: Be Still and Know the Lord your God
+    link_to: portfolio-items/be-still.html
+    class: congregational
+    desc: On God's omniscience
+  - image: images/portfolio-images/go.jpg
+    title: Go
+    link_to: portfolio-items/go.html
+    class: congregational
+    desc: A rallying call to share our Hope	
+  - image: images/portfolio-images/crown-him.jpg
+    title: Crown him with many crowns
+    link_to: portfolio-items/crown-him.html
+    class: arrangement
+    desc: An fun set-up - Accordion, Bagpipes, Tin whistle, Trombone and Viola!	
+  - image: images/portfolio-images/kenyan-friend.jpg
+    title: Ode to our valiant Kenyan friend
+    link_to: portfolio-items/kenyan-friend.html
+    class: poetry
+    desc: The hike of legends
 ---
+
+
+
+<!-- Make images: 500 x 600 
+
+More to come: 
+
+  - image: images/portfolio-images/be-thou-my-vision.jpg
+    title: Be Thou My Vision
+    link_to: portfolio-items/be-thou-my-vision.html
+    class: arrangement
+    desc: A new take on a great hymn	
+
+-->
 
 <div class='full'>
   <div class='row'>
@@ -27,10 +96,13 @@ works:
             <a data-cat='solo-songs' href='#'>Singer songwriter</a>
           </li>
           <li>
-            <a data-cat='instrumental' href='#'>Instrumentals</a>
+            <a data-cat='arrangement' href='#'>Arrangements</a>
+          </li>
+		  <li>
+            <a data-cat='instrumental' href='#'>Instrumental and/or choral</a>
           </li>
           <li>
-            <a data-cat='book' href='#'>Books</a>
+            <a data-cat='books' href='#'>Books</a>
           </li>
         </ul>
       </div>
@@ -38,7 +110,7 @@ works:
         {% for work in page.works %}
           <li class='{{work.class}}'>
             <a href='{{work.link_to}}'>
-              <img alt="" src="{{site.url}}/{{work.image}}" />
+              <img alt="" src="{{site.url}}/{{work.image}}"/>
               <div class='overlay' style='background: rgba(153, 153, 153, 0.8);'>
                 <div class='thumb-info'>
                   <h3>{{work.title}}</h3>
