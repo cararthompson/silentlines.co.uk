@@ -1,0 +1,44 @@
+---
+layout: default
+section_id: portfolio
+images:
+  - images/portfolio-images/midnight-clear.jpeg
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns'>
+	  <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide">
+              <img src="{{site.url}}/{{image}}" alt="">
+			 </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class='large-4 columns'>
+      <h3>It came upon a midnight clear</h3>
+      <p>
+		Arrangement for mini church orchestra
+      </p>
+      <ul class='info'>
+        <li>
+          <strong>Arranged:</strong>
+          Christmas 2019
+		</li>
+		<li>
+		  <strong>Instruments:</strong>
+          Violins, Flute, Clarinet, Trumpet, Trombone, Piano
+        </li>
+		<audio controls>
+			<source src="midnight-clear.mp3" type="audio/mpeg">
+		</audio>
+      </ul>
+      <p><br/>If you'd like to use a variant of this arrangement in your own church or orchestra, please <a href="#footer">get in touch</a>.</p>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+
+</div>
