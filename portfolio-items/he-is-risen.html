@@ -9,13 +9,11 @@ images:
   <div class='row'>
     <div class='large-8 columns'>
       <div class='mod modBoxedSlider'>
-        <div class='slides'>
+		<div class="embed-container">
           {% for image in page.images %}
-            <div class="slide">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/6NWIfDFtkb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+              <iframe src="https://www.youtube.com/embed/6NWIfDFtkb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
           {% endfor %}
-        </div>
+		</div>
       </div>
     </div>
     <div class='large-4 columns'>
