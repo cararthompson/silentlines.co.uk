@@ -1,0 +1,46 @@
+---
+layout: default
+section_id: portfolio
+images:
+  - images/portfolio-images/crown-him.jpg
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns'>
+	  <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide">
+              <img src="{{site.url}}/{{image}}" alt="">
+			 </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class='large-4 columns'>
+      <h3>Crown him with many crowns</h3>
+      <p>
+		A fun arrangement with a variant on a "hocket", for my most bonkers set of instruments to date. 
+		Dan, Suzie, Karen, Emily and Fraser, it was a pleasure!
+      </p>
+      <ul class='info'>
+        <li>
+          <strong>Arranged:</strong>
+          Summer 2018
+		</li>
+		<li>
+		  <strong>Instruments:</strong>
+          Bagpipes, Tin whistle, Viola, Trombone and Accordion
+        </li>
+				<div class='spacing'></div>
+		<audio controls>
+			<source src="crown-him.mp3" type="audio/mpeg">
+		</audio>
+      </ul>
+      <p><br/>If you'd like to use a variant of this arrangement in your own church or orchestra, please <a href="#footer">get in touch</a>.</p>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+
+</div>
